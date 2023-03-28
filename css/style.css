@@ -42,6 +42,11 @@ basic
 
 
 /*share button*/
+p.nzima_italics {
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+}
 
 p.resource_class{
     text-align: justify;
