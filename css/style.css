@@ -46,6 +46,7 @@ basic
 p {
     text-align: justify;
     text-justify: inter-word;
+    font-size: 30px;
 }
 
 img {
@@ -65,8 +66,8 @@ li.mwelase_outer{
 li.mwelase_inner{
     color: #000000;
     list-style-type: square;
-    font-size: 20px;
     font-weight: normal;
+    font-size: 20px;
     margin-left: 40px;
 }
 /*Paragraphs*/
