@@ -69,6 +69,13 @@ li.mwelase_outer{
     margin-left: 40px;
 }
 
+p.about_new {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+ 
+}
+
 li.mwelase_inner{
     color: #000000;
     list-style-type: square;
@@ -885,7 +892,7 @@ button {
 .cases {
     background: #fff;
     padding: 0px 30px 0px 30px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .cases .titlepage {padding-bottom: 30px;}

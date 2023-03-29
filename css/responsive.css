@@ -59,7 +59,7 @@ File Name: responsive.css
   }
   .owl-next {right: 37%;}
     .owl-prev {left: 37%;}
-   .cases {padding: 0; padding-top: 70px; }
+   .cases {padding: 0; padding-top: 30px; }
    .latest {padding: 15px 15px 0px 15px;}
    .latest .read_more {top: 12%;}
    #banner1 .carousel-control-prev, #banner1 .carousel-control-next {top: 96%;}
