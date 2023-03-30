@@ -14,6 +14,7 @@
       <meta name="author" content="">
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/buttons.js"></script>
 
       <link rel="icon" href="images/Final.jpg" type="image/gif" />
       <!-- style css -->
@@ -104,9 +105,10 @@
                         <p class="resource_class"><a href="https://www.3ds.com/products-services/biovia/products/molecular-modeling-simulation/biovia-materials-studio/" target="_blank">
                            <b>BIOVIA MATERIALS STUDIO : </b></a> is a complete modeling and simulation environment designed to allow researchers in 
                            materials science and chemistry to predict and understand the relationships of a material’s atomic and molecular 
-                           structure with its properties and behavior. Using Materials Studio, 
+                           structure with its properties and behavior<span id="dots">...</span><span id="more">. Using Materials Studio, 
                            researchers in many industries are engineering better performing materials of all types, 
-                           including catalysts, polymers, composites, metals, alloys, pharmaceuticals, batteries and more.</p> 
+                           including catalysts, polymers, composites, metals, alloys, pharmaceuticals, batteries and more.</span></p> 
+                           <button onclick="myFunction()" id="myBtn">Read more</button>
                      </li>
                      <br>
                      <li class="resource_class">
@@ -192,7 +194,7 @@
                      <li class="resource_class">
                         <p class="resource_class"><a href="https://rapidminer.com/" target="_blank">
                            <b>Rapid Miner Studio : </b></a> is a software platform for data science teams that unites data preparation, 
-                           machine learning, and predictive model deployment.It helps automate and speed up the predictive model 
+                           machine learning, and predictive model deploymentIt helps automate and speed up the predictive model 
                            creation process with the help of a drag-and-drop visual interface. 
                            You will get more than 1500 functions and algorithms 
                            that ensure the best model in every use case. RapidMiner Studio 
@@ -200,6 +202,17 @@
                            RapidMiner lets you create point-and-click connections to 
                            enterprise data warehouses, cloud storage, social media, business applications, data lakes, and databases. 
                            Beginners will also find proactive recommendations in each step to proceed.</p> 
+
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
+                              imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots_1">...</span><span id="more_1">erisque 
+                                 enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+                                 Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+                                 Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh 
+                                 tempor porta.</span></p>
+
+                                 <button onclick="my_Function()" id="myBtn_1">Read more</button>
+
+                        
                      </li>
                      <br>
 
@@ -221,12 +234,26 @@
                            Qlik accelerates ingestion, data replication, and streaming across various heterogeneous mainframe, 
                            SAP, SaaS, and database applications. You can automate ETL and design code generation along with ongoing updates.
                            The platform will help reduce the cost, risk, and time to deliver an agile cloud data warehouse.
-                            You can use push-down, and modern ELT approaches to convert, enrich, standardize, consolidate, and join data from heterogeneous structures. </p> 
+                            You can use push-down, and modern ELT approaches to convert, enrich, standardize, consolidate, and join data from heterogeneous structures.</p> 
+                            
                      </li>
                      
                  
                   
                   <br>
+
+                  <!--<li class="resource_class">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et 
+                        dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim 
+                           ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. 
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper 
+                           ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+                           Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non 
+                           fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>-->
+
+
+                  </li>
                   <h2 class="nzima_headings">Machine Learning</h2> 
                   <br>
                   <div class="titlepage text_align_center ">
@@ -361,5 +388,25 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/custom.js"></script>
+      <script>
+         function myFunction() {
+           var dots = document.getElementById("dots");
+           var moreText = document.getElementById("more");
+           var btnText = document.getElementById("myBtn");
+         
+           if (dots.style.display === "none") {
+             dots.style.display = "inline";
+             btnText.innerHTML = "Read more"; 
+             moreText.style.display = "none";
+           } else {
+             dots.style.display = "none";
+             btnText.innerHTML = "Read less"; 
+             moreText.style.display = "inline";
+           }
+         }
+         
+
+      </script>
+      <script src="buttons.js"></script>
    </body>
 </html>
