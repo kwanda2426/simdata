@@ -51,6 +51,7 @@ img.people_img {
 /* more button area*/
 #more {display: none;}
 
+
 /*share button*/
 p.nzima_italics {
     color: black;
@@ -62,6 +63,8 @@ p.resource_class{
     text-align: justify;
     text-justify: inter-word;
     font-size: 20px;
+    color: black;
+
 }
 
 
